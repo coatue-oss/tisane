@@ -6,7 +6,7 @@ I was impressed by the brevity of [sazerac](https://github.com/mikec/sazerac), h
 
 This is the result:
 
-![](example.png)
+![](https://raw.githubusercontent.com/coatue/tisane/master/example.png)
 
 Not only do you get type safety on the function's parameters, you get it on the return/assertion value as well!
 

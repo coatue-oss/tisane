@@ -24,6 +24,9 @@ testFn(add, given => {
 
 After `npm install`, you can run `jest` and see the result.
 
+Compatible with Jasmine test runners (jasmine, jest, karma, etc.)
+
 ## Todo
 
 * Test output could be better, right now it's JSON stringified with two-space indents.
+* Check that it works with mocha, ava and other popular test runners

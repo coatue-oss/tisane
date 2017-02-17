@@ -6,7 +6,7 @@ if [ -z "$1" ] || ! [[ "$1" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
 fi
 
 rm -rf node_modules
-yarn
+npm install
 npm test
 git diff --exit-code
 json -I -f "package.json" -e "this.version=\"$1\""

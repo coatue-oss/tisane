@@ -247,12 +247,12 @@ module.exports = function (re) {
 
 const stringifyObject = __webpack_require__(0);
 class TestCase {
-    constructor(givenValue, actualValue) {
-        this.givenValue = givenValue;
+    constructor(args, actualValue) {
+        this.args = args;
         this.actualValue = actualValue;
     }
     expect(expectedValue) {
-        describe(`when given${beautify(this.givenValue)}`, () => {
+        describe(`when given${beautify(this.args)}`, () => {
             it(`it should return${beautify(expectedValue)}`, () => {
                 expect(this.actualValue).toEqual(expectedValue);
             });

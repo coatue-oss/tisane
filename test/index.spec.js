@@ -18,6 +18,12 @@ index_1.testFn((a, b) => a - b, given => {
     given(3, 2).expect(1);
     given(7, 5).expect(2);
 });
+function withLambda(fn) {
+    return `Output is ${fn()}`;
+}
+index_1.testFn(withLambda, given => {
+    given(() => 7).expect('Output is 7');
+});
 function assign(a, b) {
     return Object.assign({}, a, b);
 }

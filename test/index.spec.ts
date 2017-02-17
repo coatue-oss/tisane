@@ -21,6 +21,14 @@ testFn((a: number, b: number) => a - b, given => {
   given(7, 5).expect(2)
 })
 
+function withLambda(fn: () => number): string {
+  return `Output is ${fn()}`
+}
+testFn(withLambda, given => {
+  given(() => 7).expect('Output is 7')
+})
+
+
 function assign(a: Object, b: Object): Object {
   return Object.assign({}, a, b)
 }

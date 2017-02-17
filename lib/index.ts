@@ -1,10 +1,10 @@
 import * as stringifyObject from 'stringify-object'
 
 export class TestCase<Z> {
-  constructor(private givenValue: any, private actualValue: Z) { }
+  constructor(private args: any, private actualValue: Z) { }
 
   expect(expectedValue: Z): void {
-    describe(`when given${beautify(this.givenValue)}`, () => {
+    describe(`when given${beautify(this.args)}`, () => {
       it(`it should return${beautify(expectedValue)}`, () => {
         expect(this.actualValue).toEqual(expectedValue)
       })

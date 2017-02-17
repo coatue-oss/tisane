@@ -1,7 +1,7 @@
 export declare class TestCase<Z> {
-    private givenValue;
+    private args;
     private actualValue;
-    constructor(givenValue: any, actualValue: Z);
+    constructor(args: any, actualValue: Z);
     expect(expectedValue: Z): void;
 }
 export declare function testFn<Z>(fn: () => Z, describeFn: (given: () => TestCase<Z>) => void): void;

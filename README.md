@@ -8,9 +8,11 @@ This is the result:
 
 ![](example.png)
 
-## Code
+## Example Code
 
 ```typescript
+import { testFn } from 'tisane'
+
 function add(a: number, b: number): number {
   return a + b
 }

@@ -1,9 +1,11 @@
+import * as stringifyObject from 'stringify-object'
+
 export class TestCase<Z> {
   constructor(private givenValue: any, private actualValue: Z) { }
 
   expect(expectedValue: Z): void {
-    describe(`when given\n${beautify(this.givenValue)}`, () => {
-      it(`it should return\n${beautify(expectedValue)}`, () => {
+    describe(`when given${beautify(this.givenValue)}`, () => {
+      it(`it should return${beautify(expectedValue)}`, () => {
         expect(this.actualValue).toEqual(expectedValue)
       })
     })
@@ -33,6 +35,16 @@ export function testFn<Z>(fn: Function, describeFn: (given: (...args: any[]) => 
   })
 }
 
-function beautify(a: Object): string {
-  return JSON.stringify(a, null, 2)
+function beautify(a: any): string {
+  const result = stringifyObject(a, {
+    indent: '  ',
+    singleQuotes: true,
+    inlineCharacterLimit: 65,
+  })
+
+  return occurrences('\n', result) > 0 ? `:\n${result}` : ` ${result}`
+}
+
+function occurrences(needle: string, haystack: string): number {
+  return haystack.split(needle).length - 1
 }

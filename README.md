@@ -46,10 +46,18 @@ testFn(add, given => {
 })
 ```
 
+Test output (with jest):
+
+```
+  add
+    when given [1, 2]
+      ✓ it should return 3
+    when given [3, 4]
+      ✓ it should return 7
+```
+
 To see it running locally, run `npm install` and then `jest` and see the result.
 
 ## Todo
 
-* Test output could be better, right now it's JSON stringified with two-space indents.
-  * If input & output are one-liners, keep the result on the same line.
 * Check that it works with mocha, ava and other popular test runners

@@ -56,8 +56,4 @@ Test output (with jest):
       ✓ it should return 7
 ```
 
-To see it running locally, run `npm install` and then `jest` and see the result.
-
-## Todo
-
-* Check that it works with mocha, ava and other popular test runners
+To see it running locally, run `npm install` and then `jest` to see the test results.

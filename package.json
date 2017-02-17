@@ -23,11 +23,9 @@
     "jest": "^18.1.0",
     "json": "^9.0.4",
     "npm-run-all": "^4.0.1",
+    "stringify-object": "^3.1.0",
     "tslint": "^4.4.2",
     "typescript": "^2.0.3",
     "webpack": "^2.2.1"
-  },
-  "dependencies": {
-    "stringify-object": "^3.1.0"
   }
 }

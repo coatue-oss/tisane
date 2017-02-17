@@ -8,6 +8,8 @@ This is the result:
 
 ![](example.png)
 
+Not only do you get type safety on the function's parameters, you get it on the return/assertion value as well!
+
 Compatible with Jasmine test runners (jasmine, jest, karma, etc.)
 
 ## Example

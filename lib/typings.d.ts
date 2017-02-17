@@ -1,3 +1,4 @@
+// TODO: move this to typings
 declare module 'stringify-object' {
   function stringifyObject(o: any, options?: Partial<{
     indent: string,

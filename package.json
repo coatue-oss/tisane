@@ -11,10 +11,10 @@
     "build": "tsc && tsc --project tsconfig.d.json && webpack",
     "lint": "tslint --project .",
     "test": "npm run build && npm run lint && jest",
-    "watch": "npm-run-all --parallel watch:*",
+    "watch": "npm-run-all -pr watch:*",
     "watch:tsc": "tsc --watch",
     "watch:tscd": "tsc --project tsconfig.d.json --watch",
-    "watch:test": "jest",
+    "watch:test": "jest --watch",
     "watch:webpack": "webpack --watch"
   },
   "devDependencies": {

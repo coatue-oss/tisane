@@ -26,7 +26,7 @@ export function testFn<A, B, C, D, E, F, G, H, I, J, Z>(fn: (a: A, b: B, c: C, d
 export function testFn<A, B, C, D, E, F, G, H, I, J, K, Z>(fn: (a: A, b: B, c: C, d: D, e: E, f: F, g: G, h: H, i: I, j: J, k: K) => Z, describeFn: (given: (a: A, b: B, c: C, d: D, e: E, f: F, g: G, h: H, i: I, j: J, k: K) => TestCase<Z>) => void): void
 
 export function testFn<Z>(fn: Function, describeFn: (given: (...args: any[]) => TestCase<Z>) => void): void {
-  describe(fn.name, () => {
+  describe(fn.name || '[unnamed function]', () => {
     function given(...args: any[]): TestCase<Z> {
       const actualValue = fn.apply(null, args)
       return new TestCase(args, actualValue)

@@ -13,6 +13,11 @@ index_1.testFn(add, given => {
     given(1, 2).expect(3);
     given(3, 4).expect(7);
 });
+// subtract (unnamed function)
+index_1.testFn((a, b) => a - b, given => {
+    given(3, 2).expect(1);
+    given(7, 5).expect(2);
+});
 function assign(a, b) {
     return Object.assign({}, a, b);
 }

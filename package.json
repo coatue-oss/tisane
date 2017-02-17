@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "tisane",
   "description": "Minimal type-safe testing",
   "version": "1.0.0",

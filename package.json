@@ -1,6 +1,6 @@
 {
   "name": "tisane",
-  "description": "Minimal type-safe testing",
+  "description": "Minimal type-safe function testing",
   "version": "1.0.1",
   "main": "dist/tisane.js",
   "typings": "lib/index.d.ts",

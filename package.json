@@ -5,7 +5,7 @@
   "main": "dist/tisane.js",
   "typings": "lib/index.d.ts",
   "author": "Chris Khoo",
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "tsc && tsc --project tsconfig.d.json && webpack",
     "lint": "tslint --project .",

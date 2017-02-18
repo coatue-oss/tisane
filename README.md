@@ -1,6 +1,6 @@
 # tisane
 
-Minimal type-safe testing
+Minimal type-safe function testing
 
 I was impressed by the brevity of [sazerac](https://github.com/mikec/sazerac), however I dearly wanted the type safety and autocomplete functionality of TypeScript and Visual Studio Code.
 

@@ -5,6 +5,8 @@ if [ -z "$1" ] || ! [[ "$1" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
   exit 1
 fi
 
+set -e
+git diff --exit-code
 rm -rf node_modules
 npm install
 npm test

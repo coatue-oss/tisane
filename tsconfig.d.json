@@ -22,7 +22,6 @@
     "target": "es6"
   },
   "files": [
-    "lib/index.ts",
-    "lib/typings.d.ts"
+    "lib/index.ts"
   ]
 }
